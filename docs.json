@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Pornx Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FFA702",
+    "light": "#FFA702",
+    "dark": "#FFA702"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://storage.googleapis.com/cdn2.pornx.co/favicon.ico",
   "navigation": {
     "tabs": [
       {
@@ -15,7 +15,33 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": ["index", "quickstart", "development"]
+            "expanded": true,
+            "pages": [
+              {
+                "group": "🖌️ Create your Image",
+                "pages": [
+                  "create-your-image/introduction",
+                  "create-your-image/custom-prompt",
+                  "create-your-image/writing-prompt"
+                ]
+              },
+              {
+                "group": "Create your Video",
+                "icon": "pencil",
+                "pages": ["installation", "editor"]
+              },
+              "Create consistent characters",
+              {
+                "group": "Gallery",
+                "icon": "pencil",
+                "pages": ["installation", "editor"]
+              },
+              {
+                "group": "Save Images",
+                "icon": "pencil",
+                "pages": ["installation", "editor"]
+              }
+            ]
           },
           {
             "group": "Customization",
@@ -75,8 +101,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo.svg",
+    "dark": "/logo/logo.svg"
   },
   "navbar": {
     "links": [
@@ -109,5 +135,8 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "fonts": {
+    "family": "Poppins"
   }
 }
