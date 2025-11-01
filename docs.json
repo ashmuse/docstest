@@ -22,7 +22,8 @@
                 "pages": [
                   "create-your-image/introduction",
                   "create-your-image/custom-prompt",
-                  "create-your-image/writing-prompt"
+                  "create-your-image/writing-prompt",
+                  "create-your-image/action"
                 ]
               },
               {
