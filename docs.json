@@ -1,18 +1,31 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Pornx Docs",
+  "name": "PornX Docs",
   "colors": {
     "primary": "#FFA702",
     "light": "#FFA702",
     "dark": "#FFA702"
   },
-  "favicon": "https://storage.googleapis.com/cdn2.pornx.co/favicon.ico",
+  "favicon": "/logo/favicon-px.ico",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "PornX",
+          "href": "https://pornx.co/"
+        },
+        {
+          "anchor": "Discord",
+          "icon": "discord",
+          "href": "https://discord.gg/wE8z47gbhF"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Guides",
-        "groups": [
+        "pages": [
           {
             "group": "Getting started",
             "expanded": true,
@@ -29,77 +42,19 @@
               {
                 "group": "Create your Video",
                 "icon": "pencil",
-                "pages": ["installation", "editor"]
+                "pages": []
               },
-              "Create consistent characters",
               {
                 "group": "Gallery",
                 "icon": "pencil",
-                "pages": ["installation", "editor"]
-              },
-              {
-                "group": "Save Images",
-                "icon": "pencil",
-                "pages": ["installation", "editor"]
+                "pages": []
               }
             ]
           },
-          {
-            "group": "Customization",
-            "pages": ["essentials/settings", "essentials/navigation"]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": ["api-reference/introduction"]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+          "untitled-page"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "PornX",
-          "href": "https://pornx.co/",
-          "icon": "/logo/logo2.svg"
-        },
-        {
-          "anchor": "Discord",
-          "href": "https://discord.gg/wE8z47gbhF",
-          "icon": "discord"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/logo.svg",
@@ -109,7 +64,15 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@pornx.co"
+      },
+      {
+        "label": "PornX",
+        "href": "https://pornx.co/"
+      },
+      {
+        "label": "Discord",
+        "href": "https://discord.gg/Gz29x92rZT"
       }
     ],
     "primary": {
@@ -132,12 +95,37 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/PornX_News",
+      "discord": "https://discord.gg/Gz29x92rZT",
+      "telegram": "https://t.me/pxainews"
     }
   },
   "fonts": {
-    "family": "Poppins"
+    "family": "Poppins",
+    "weight": 400,
+    "format": "woff2",
+    "heading": {
+      "family": "Poppins",
+      "weight": 400
+    },
+    "body": {
+      "family": "Poppins",
+      "weight": 400
+    }
+  },
+  "description": "PornX is an advanced AI porn generator for creating high-quality NSFW images and videos in seconds. Use custom prompts, pose control, Quality+ enhancement, LoRA models, and private generation to produce realistic or anime-style adult content with full creative freedom. PornX also features one of the largest AI-generated porn collections online, with millions of images and videos created by our community.",
+  "appearance": {
+    "default": "dark"
+  },
+  "thumbnails": {
+    "fonts": {
+      "family": "Poppins"
+    }
+  },
+  "seo": {
+    "indexing": "all"
+  },
+  "background": {
+    "decoration": "gradient"
   }
 }
