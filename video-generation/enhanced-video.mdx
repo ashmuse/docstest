@@ -1,0 +1,56 @@
+---
+title: "Enhanced Video"
+description: "Upscale and sharpen a generated video clip."
+keywords: ["enhanced video", "upscale", "sharpen", "improve quality"]
+---
+
+<Note>Requires Premium.</Note>
+
+Enhanced Video processes a finished clip and returns a higher-quality version — sharper detail, reduced artifacts, smoother motion. Run it after Image-to-Video or Text-to-Video when the output is close to what you want but needs refinement.
+
+## How to use it
+
+1. Generate a clip using Image-to-Video or Text-to-Video
+2. Open the clip in your Session
+3. Click **Enhance**
+4. Wait for the enhanced version to render — it appears alongside the original in your Session
+
+Enhanced Video does not change the motion or composition. It only improves the visual quality of what's already there.
+
+## When to use it
+
+- The clip is the right motion and composition but looks soft or low-detail
+- You're preparing a clip to share or publish
+- You want to compare enhanced vs original before deciding which to keep
+
+## When not to use it
+
+- The motion or composition is wrong — fix those first, then enhance
+- You're still experimenting — enhance only when you have a result worth keeping, as it uses additional tokens
+
+## Token cost
+
+Enhanced Video uses tokens on top of the original generation cost. See [/premium](/premium) for current rates.
+
+## Common issues
+
+<AccordionGroup>
+  <Accordion title="The enhanced clip looks over-sharpened">
+    Enhanced Video applies a fixed sharpening pass. If the original clip had heavy artifacts, enhancement can amplify them. Regenerate the base clip first, then enhance.
+  </Accordion>
+  <Accordion title="The enhanced version isn't available yet">
+    Enhanced Video render time is longer than standard generation. Wait for the clip to finish processing — it will appear in your Session when ready.
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup cols={2}>
+  <Card title="Image-to-Video" icon="image" href="/video-generation/image-to-video">
+    Generate the clip before enhancing.
+  </Card>
+  <Card title="Text-to-Video" icon="text" href="/video-generation/text-to-video">
+    Generate from a prompt before enhancing.
+  </Card>
+  <Card title="Sessions" icon="folder" href="/video-generation/sessions">
+    Find and manage your enhanced clips.
+  </Card>
+</CardGroup>

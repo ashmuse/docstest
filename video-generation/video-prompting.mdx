@@ -1,0 +1,68 @@
+---
+title: "Video Prompting"
+description: "How to write prompts that produce consistent motion and camera movement in video generation."
+keywords: ["video prompt", "motion prompt", "camera movement", "animation"]
+---
+
+Video prompts work differently from image prompts. The scene is already defined — by the first frame in Image-to-Video, or by the subject description in Text-to-Video. The prompt's job is to describe movement, not appearance.
+
+## Prompt structure for video
+
+Write elements in this order:
+
+| Position | Element | Example |
+| --- | --- | --- |
+| 1 | Subject motion | `walking slowly forward` |
+| 2 | Secondary motion | `hair blowing in the wind, dress flowing` |
+| 3 | Camera movement | `slow zoom in, steady camera` |
+| 4 | Lighting or mood | `soft natural light, warm tone` |
+
+Keep it short. Four to eight terms produce more consistent results than long descriptive paragraphs.
+
+## Motion terms that work
+
+**Body motion:** `walking forward, turning head slowly, looking toward camera, sitting down, leaning back, raising arms, subtle breathing motion, blinking`
+
+**Secondary motion:** `hair blowing, dress flowing, water rippling, leaves moving, smoke drifting`
+
+**Camera:** `slow zoom in, slow zoom out, steady camera, slow pan left, slow pan right, slight camera shake, pull back, push in, orbit around subject`
+
+**Pace:** `slow motion, normal speed, gentle, subtle`
+
+## Good vs bad video prompts
+
+**Bad:** `beautiful woman, soft light, photorealistic, high quality` — this describes an image, not motion. The model produces a near-static clip.
+
+**Good:** `slow pan right, subject turns head toward camera, hair moving gently, steady handheld camera feel, warm soft light`
+
+**Bad:** `running, jumping, spinning, dancing, waving, laughing` — too many simultaneous actions. The model can't resolve them and produces chaotic or distorted motion.
+
+**Good:** `walking slowly forward, slight sway in movement, camera pulls back steadily`
+
+## Image-to-Video vs Text-to-Video prompting
+
+**Image-to-Video** — the scene is fixed. Focus entirely on motion and camera. Don't redescribe the subject or setting.
+
+**Text-to-Video** — the scene is not fixed. Open with a brief subject and setting description, then move into motion and camera terms. See [Text-to-Video](/video-generation/text-to-video).
+
+## Tips
+
+- One primary motion per prompt — describe one main action and let secondary motion support it
+- Add camera movement explicitly — without it the model defaults to a locked, static camera
+- Avoid conflicting directions — `zoom in` and `pull back` in the same prompt cancel each other out
+- Subtle motion prompts produce more stable output than large movement prompts — `slow turn` beats `spinning around`
+- If the output is too static, add `continuous motion, fluid movement` to the prompt
+
+<CardGroup cols={2}>
+  <Card title="Image-to-Video" icon="image" href="/video-generation/image-to-video">
+    Animate a first frame using a motion prompt.
+  </Card>
+
+  <Card title="Text-to-Video" icon="text" href="/video-generation/text-to-video">
+    Generate a clip from prompt alone.
+  </Card>
+
+  <Card title="Prompting Basics" icon="text" href="/prompting/basics">
+    Image prompt structure for reference.
+  </Card>
+</CardGroup>

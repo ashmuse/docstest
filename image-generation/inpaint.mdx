@@ -1,0 +1,52 @@
+---
+title: "InPaint"
+description: "Edit a specific area of a generated image without regenerating the whole thing."
+keywords: ["inpaint", "edit", "mask", "edit image", "fix", "generate area"]
+---
+
+<Note>
+  Requires Premium.
+</Note>
+
+InPaint lets you select a region of an existing image and redraw it using a new prompt. The rest of the image stays intact.
+
+## How to use InPaint
+
+1. Open any image you've generated
+2. Click **InPaint**
+3. Paint over the area you want to change — use a brush size that covers the region cleanly
+4. Write a prompt describing what you want in that area
+5. Click **Generate** — only the masked region is redrawn
+
+## Tips
+
+- Keep the InPaint prompt focused on the selected area only — describing the full image confuses the output
+- Use a slightly larger mask than the area you want to change — tight masks produce hard edges
+- If the result doesn't blend well, run InPaint again with a larger mask that overlaps the surrounding area
+- InPaint works on any generated image regardless of which model produced it
+
+## Common issues
+
+<AccordionGroup>
+  <Accordion title="The redrawn area doesn't match the rest of the image">
+    The mask edge is too tight. Expand the mask to overlap slightly with the surrounding area and regenerate.
+  </Accordion>
+
+  <Accordion title="The result ignores my prompt">
+    Prompt Enhancer may be overriding your input. Toggle it off in the settings panel and try again with a more specific prompt.
+  </Accordion>
+
+  <Accordion title="InPaint is not available on my image">
+    InPaint is only available on images generated within your current account. Gallery images must be saved to your account first.
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup cols={2}>
+  <Card title="Gallery" icon="images" href="/gallery">
+    Save and organize images before editing.
+  </Card>
+
+  <Card title="Prompting Basics" icon="text" href="/prompting/basics">
+    How to write a focused prompt for a specific area.
+  </Card>
+</CardGroup>

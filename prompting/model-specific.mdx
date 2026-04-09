@@ -1,0 +1,63 @@
+---
+title: "Model-specific tips"
+description: "Prompting quirks and adjustments for each model."
+keywords: ["model tips", "realism prompts", "anime prompts", "cinematic prompts"]
+---
+
+Each model interprets prompts differently. These notes cover what works, what doesn't, and what to adjust when a model isn't behaving as expected.
+
+## Realism
+
+Realism responds well to photographic language — lighting setups, lens characteristics, and real-world setting descriptions produce the most accurate output. Avoid illustration or painting style tags entirely; they push the model toward an uncanny middle ground rather than blending styles.
+
+Add skin detail terms explicitly: `detailed skin texture, natural pores, soft subsurface scattering` improve close-up portrait quality significantly. For anatomy accuracy, pair with the Better Breast or BetterCock LoRA.
+
+Avoid: `anime, illustrated, painted, cartoon, 3D render` — these degrade output quality on Realism without producing a hybrid style.
+
+## Anime
+
+Anime responds to character-description language more than scene-description language. Hair color, eye style, outfit details, and emotional expression drive the output more than lighting or camera terms.
+
+Quality tags that work well: `detailed linework, soft shading, clean lines, high detail, 2D illustration`. Avoid photorealistic quality tags like `photorealistic, natural skin, subsurface scattering` — they produce muddy output.
+
+For explicit content, Anime requires more explicit prompt terms than Realism to produce the same result — be more direct about what you want.
+
+## Cinematic
+
+Cinematic is driven by lighting and color grading language. Without strong lighting terms the model defaults to a flat editorial look. Push it with: `dramatic side light, single overhead light, neon fill light, golden hour, deep shadows, high contrast`.
+
+Color grading terms work well: `teal and orange grade, desaturated cold tones, warm filmic grade`. Treat the prompt like a film brief — setting and mood matter as much as subject.
+
+Avoid: flat lighting terms, studio white background, anime or illustration style tags.
+
+## 3D
+
+3D produces the best results with terms that describe rendered surfaces: `smooth skin, volumetric lighting, soft shadows, subsurface scattering, high poly, CGI render`. Vague style terms produce inconsistent output — be specific about the render quality you want.
+
+Character design language works well: `stylized proportions, large eyes, detailed outfit, game-art style`. Avoid photorealistic skin terms — they conflict with the model's rendering aesthetic.
+
+## Cartoon
+
+Cartoon responds to graphic design language more than photographic or painterly language. Describe the illustration style directly: `retro pin-up, comic book style, bold outlines, flat color fill, 1950s illustration, graphic poster`.
+
+Avoid: photorealistic, cinematic, subsurface scattering, depth of field — these terms produce no effect or degrade the flat graphic quality that makes Cartoon useful.
+
+For explicit content, describe anatomy in flat graphic terms rather than realistic ones.
+
+## Versatile
+
+Versatile is the least opinionated model — it responds to a wider range of style combinations without breaking. Use it when mixing style tags that would conflict on a specialized model.
+
+It performs best when the prompt is specific about subject and setting and loose about style. Heavy style direction works better on specialized models.
+
+{/* TODO: confirm with PM — add tips for X Vision and X Sweet once final names and style behavior are confirmed */}
+
+<CardGroup cols={2}>
+  <Card title="Prompting Basics" icon="text" href="/prompting/basics">
+    General prompt structure and element order.
+  </Card>
+
+  <Card title="Advanced Prompting" icon="sliders" href="/prompting/advanced">
+    Weights, negatives, and token order.
+  </Card>
+</CardGroup>

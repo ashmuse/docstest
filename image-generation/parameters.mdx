@@ -1,0 +1,57 @@
+---
+title: "Parameters"
+description: "Resolution and seed — the two generation parameters available in PornX."
+keywords: ["resolution", "seed", "aspect ratio", "dimensions", "advanced"]
+---
+
+Two parameters control how an image is generated: resolution and seed. Everything else is handled by the model, LoRA, Style, and Action.
+
+## Resolution
+
+Resolution sets the output dimensions. Pick based on your subject and intended use.
+
+| Ratio | Best for |
+|---|---|
+| 1:1 | Gallery display, square compositions |
+| 7:9 | Portraits, single characters |
+| 9:7 | Wide scenes, environments |
+| 5:12 | Full-body shots, tall compositions |
+| 12:5 | Ultra-wide, cinematic crops |
+| 13:19 | Mobile viewing, editorial |
+| 19:13 | Landscape, desktop wallpaper |
+| 4:7 | Tall portrait, close-up |
+| 7:4 | Wide portrait, horizontal |
+
+<Tip>If you plan to animate the result, check the resolution requirements before generating. See [Image-to-Video](/video-generation/image-to-video).</Tip>
+
+## Seed
+
+A seed is a number that fixes the random starting point of a generation. Same prompt, same model, same seed — same result every time.
+
+Seed is hidden by default. To access it, open the **Advanced** toggle in the generator.
+
+**When to use it:**
+- You got a result you like and want to iterate without losing the base composition
+- You're testing how a prompt change affects output while keeping everything else constant
+- You want to reproduce a specific result later
+
+**When to ignore it:**
+- You're exploring — leave seed off and let the generator vary freely
+- Most users never need to set it manually
+
+## Prompt
+
+The prompt field accepts plain text. Write what you want to see: subject, action, setting, lighting, style. Order matters — put the most important elements first.
+
+Prompt Enhancer is on by default and expands short prompts automatically. You can toggle it off in the settings panel if you want the output to follow your exact wording.
+
+For a full breakdown of prompt structure, see [Prompting Basics](/prompting/basics).
+
+<CardGroup cols={2}>
+  <Card title="Prompting Basics" icon="text" href="/prompting/basics">
+    How to structure a prompt that gets consistent results.
+  </Card>
+  <Card title="Image-to-Video" icon="film" href="/video-generation/image-to-video">
+    Resolution requirements for animation.
+  </Card>
+</CardGroup>

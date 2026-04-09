@@ -8,6 +8,47 @@
     "dark": "#FFA702"
   },
   "favicon": "/logo/favicon-px.ico",
+  "logo": {
+    "light": "/logo/logo.svg",
+    "dark": "/logo/logo.svg"
+  },
+  "appearance": {
+    "default": "dark"
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Poppins",
+      "weight": 600
+    },
+    "body": {
+      "family": "Poppins",
+      "weight": 400
+    }
+  },
+  "description": "PornX is an AI image and video generation platform for adult content. Generate NSFW images and videos from text prompts, browse one of the largest AI-generated galleries online, and publish your own creations.",
+  "seo": {
+    "indexing": "all"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@pornx.co"
+      },
+      {
+        "label": "Discord",
+        "href": "https://discord.gg/Gz29x92rZT"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Go to PornX",
+      "href": "https://pornx.co/"
+    }
+  },
   "navigation": {
     "global": {
       "anchors": [
@@ -18,79 +59,119 @@
         {
           "anchor": "Discord",
           "icon": "discord",
-          "href": "https://discord.gg/wE8z47gbhF"
+          "href": "https://discord.gg/Gz29x92rZT"
+        },
+        {
+          "anchor": "Telegram",
+          "icon": "telegram",
+          "href": "https://t.me/pxainews"
         }
       ]
     },
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Docs",
         "pages": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "expanded": true,
             "pages": [
-              {
-                "group": "🖌️ Create your Image",
-                "pages": [
-                  "create-your-image/introduction",
-                  "create-your-image/custom-prompt",
-                  "create-your-image/writing-prompt",
-                  "create-your-image/actions"
-                ]
-              },
-              {
-                "group": "Create your Video",
-                "icon": "pencil",
-                "pages": []
-              },
-              {
-                "group": "Gallery",
-                "icon": "pencil",
-                "pages": []
-              }
+              "introduction/what-is-pornx",
+              "introduction/quickstart"
             ]
           },
-          "untitled-page"
+          {
+            "group": "Image Generation",
+            "pages": [
+              "image-generation/overview",
+              "image-generation/models",
+              "image-generation/parameters",
+              "image-generation/loras",
+              "image-generation/styles",
+              "image-generation/presets",
+              "image-generation/inpaint",
+              "image-generation/private-generation"
+            ]
+          },
+          {
+            "group": "Prompting Guide",
+            "pages": [
+              "prompting/basics",
+              "prompting/advanced",
+              "prompting/model-specific"
+            ]
+          },
+          {
+            "group": "Video Generation",
+            "pages": [
+              "video-generation/overview",
+              "video-generation/workflow",
+              "video-generation/text-to-video",
+              "video-generation/image-to-video",
+              "video-generation/enhanced-video",
+              "video-generation/sessions",
+              "video-generation/video-prompting"
+            ]
+          },
+          {
+            "group": "Cookbook",
+            "pages": [
+              "cookbook/realistic-portrait",
+              "cookbook/cinematic-scene",
+              "cookbook/anime-character",
+              "cookbook/cartoon-pinup",
+              "cookbook/realistic-interior",
+              "cookbook/outdoor-golden-hour",
+              "cookbook/fantasy-character-3d",
+              "cookbook/versatile-experimental",
+              "cookbook/animate-portrait",
+              "cookbook/animate-scene",
+              "cookbook/text-to-video-basic",
+              "cookbook/inpaint-background",
+              "cookbook/inpaint-detail",
+              "cookbook/lora-stacking",
+              "cookbook/style-action-combo"
+            ]
+          },
+          {
+            "group": "Gallery",
+            "pages": [
+              "gallery"
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "account/tokens",
+              "account/premium",
+              "account/crypto-payments"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/generation",
+              "troubleshooting/payment",
+              "troubleshooting/content"
+            ]
+          },
+          {
+            "group": "More",
+            "pages": [
+              "community-guidelines",
+              "support"
+            ]
+          }
         ]
       }
     ]
-  },
-  "logo": {
-    "light": "/logo/logo.svg",
-    "dark": "/logo/logo.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@pornx.co"
-      },
-      {
-        "label": "PornX",
-        "href": "https://pornx.co/"
-      },
-      {
-        "label": "Discord",
-        "href": "https://discord.gg/Gz29x92rZT"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
   },
   "contextual": {
     "options": [
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
@@ -100,32 +181,9 @@
       "telegram": "https://t.me/pxainews"
     }
   },
-  "fonts": {
-    "family": "Poppins",
-    "weight": 400,
-    "format": "woff2",
-    "heading": {
-      "family": "Poppins",
-      "weight": 400
-    },
-    "body": {
-      "family": "Poppins",
-      "weight": 400
-    }
-  },
-  "description": "PornX is an advanced AI porn generator for creating high-quality NSFW images and videos in seconds. Use custom prompts, pose control, Quality+ enhancement, LoRA models, and private generation to produce realistic or anime-style adult content with full creative freedom. PornX also features one of the largest AI-generated porn collections online, with millions of images and videos created by our community.",
-  "appearance": {
-    "default": "dark"
-  },
   "thumbnails": {
     "fonts": {
       "family": "Poppins"
     }
-  },
-  "seo": {
-    "indexing": "all"
-  },
-  "background": {
-    "decoration": "gradient"
   }
 }

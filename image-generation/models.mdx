@@ -1,0 +1,173 @@
+---
+title: "Models"
+description: "Choose the right model for your visual style."
+keywords: ["models", "realism", "anime", "cinematic", "3d", "cartoon"]
+mode: "wide"
+---
+
+Each model produces a distinct look. The prompt is the same — the model decides how it's interpreted.
+
+## Comparison
+
+| Model | Style | Best for | Free tier |
+| --- | --- | --- | --- |
+| Realism | Photographic | Lifelike skin, natural lighting, real-world scenes | ✓ |
+| Anime | Illustrated, 2D | Anime and manga-style characters and scenes | ✓ |
+| Cinematic | Film-grade | Dramatic lighting, editorial looks, movie stills | — |
+| 3D | Rendered, volumetric | Stylized 3D characters, soft shading, game-art feel | — |
+| Cartoon | Flat, graphic | Pin-up, comic, retro illustration styles | — |
+| Versatile | Balanced | Mixed styles, experimental prompts, general use | — |
+| X Vision | TBD | TBD | — |
+| X Sweet | TBD | TBD | — |
+
+<Note>
+  Models marked — require Premium. See [/premium](/premium).
+</Note>
+
+---
+
+## Realism
+
+Photorealistic output with accurate skin texture, natural lighting, and true-to-life proportions.
+
+**Pick this when:**
+
+- You want the result to look like a photograph
+- Skin texture, hair detail, and lighting accuracy matter
+- You plan to animate the result — Realism is currently the only model that supports image-to-video
+
+**Avoid when:** you want a stylized, illustrated, or rendered look — use Anime, 3D, or Cartoon instead.
+
+{/* TODO: screenshot after /create redesign ships — should show a Realism output, close-up portrait, natural light */}
+
+**Example prompt:** `a woman in her 30s, dark hair, white linen shirt, sitting by a window, soft natural light, shallow depth of field, photorealistic`
+
+---
+
+## Anime
+
+Clean 2D illustration style with bold linework, flat shading, and expressive character design.
+
+**Pick this when:**
+
+- You want anime or manga-style output
+- You're generating characters with stylized proportions or exaggerated features
+- You want a recognizable illustrated aesthetic
+
+**Avoid when:** you want photorealism or a 3D-rendered look — use Realism or 3D instead.
+
+{/* TODO: screenshot after /create redesign ships — should show an Anime output, female character, stylized face */}
+
+**Example prompt:** `anime girl, long silver hair, school uniform, cherry blossom background, detailed linework, soft shading`
+
+---
+
+## Cinematic
+
+Film-grade output with dramatic lighting, strong color grading, and a high-production aesthetic.
+
+**Pick this when:**
+
+- You want the result to look like a still from a film or editorial shoot
+- Mood, contrast, and color temperature are important
+- You're generating scenes with strong directional light
+
+**Avoid when:** you want clean natural light — use Realism instead.
+
+{/* TODO: screenshot after /create redesign ships — should show a Cinematic output, dramatic lighting, strong shadows */}
+
+**Example prompt:** `a woman in a red dress, standing in a dark corridor, single overhead light, cinematic color grade, film still`
+
+---
+
+## 3D
+
+Stylized 3D-rendered characters with soft volumetric shading, smooth surfaces, and a game-art or CGI aesthetic.
+
+**Pick this when:**
+
+- You want a polished rendered look rather than photographic or flat illustration
+- You're generating characters with stylized but three-dimensional presence
+- You want something between realism and cartoon
+
+**Avoid when:** you want flat 2D illustration — use Anime or Cartoon instead.
+
+{/* TODO: screenshot after /create redesign ships — should show a 3D output, rendered female character, soft lighting */}
+
+**Example prompt:** `3D rendered woman, short blonde hair, futuristic outfit, studio lighting, smooth skin, high detail, CGI style`
+
+---
+
+## Cartoon
+
+Flat graphic style suited to pin-up, comic, and retro illustration aesthetics.
+
+**Pick this when:**
+
+- You want a flat, graphic, or illustrative result
+- You're going for a pin-up, comic-book, or retro poster look
+- Bold outlines and simplified shading are part of the aesthetic
+
+**Avoid when:** you want detailed illustration with anime-style linework — use Anime instead.
+
+{/* TODO: screenshot after /create redesign ships — should show a Cartoon output, pin-up style, flat colors */}
+
+**Example prompt:** `retro pin-up illustration, woman in a swimsuit, bold outlines, flat colors, 1950s style, graphic poster aesthetic`
+
+---
+
+## Versatile / Studio
+
+A general-purpose model that handles mixed styles and experimental prompts without committing to a single aesthetic.
+
+**Pick this when:**
+
+- You're exploring and don't want to commit to a specific style
+- Your prompt mixes styles or is hard to categorize
+- You want to compare outputs across models before committing
+
+**Avoid when:** you have a clear target aesthetic — a specialized model will get you there faster.
+
+{/* TODO: screenshot after /create redesign ships — should show a Versatile output */}
+
+**Example prompt:** `a woman in a fantasy forest, soft light, detailed environment, mixed painterly and photographic style`
+
+---
+
+## X Vision
+
+{/* TODO: confirm with PM — final name, style description, best-use cases, example prompt */}
+
+_Final name TBD._
+
+---
+
+## X Sweet
+
+{/* TODO: confirm with PM — final name, style description, best-use cases, example prompt. Note: internally the most-used new model. */}
+
+_Final name TBD._
+
+---
+
+## LoRAs
+
+LoRAs run on top of any model and fine-tune specific anatomical details. PornX currently has two: **Better Breast** and **BetterCock**. Apply them by adding `<lora:NAME:WEIGHT>` directly in your prompt. See [LoRAs](/image-generation/loras) for trigger words and weight guidance.
+
+<CardGroup cols={2}>
+  <Card title="LoRAs" icon="sliders" href="/image-generation/loras">
+    Anatomy fine-tuning on top of any model.
+  </Card>
+
+  <Card title="Prompting Basics" icon="text" href="/prompting/basics">
+    Structure prompts that work across all models.
+  </Card>
+
+  <Card title="Model-specific tips" icon="lightbulb" href="/prompting/model-specific">
+    Prompting quirks per model.
+  </Card>
+
+  <Card title="Parameters" icon="settings" href="/image-generation/parameters">
+    Resolution and seed options.
+  </Card>
+</CardGroup>

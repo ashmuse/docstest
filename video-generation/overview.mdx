@@ -1,0 +1,66 @@
+---
+title: "Overview"
+description: "How video generation works on PornX and where to start."
+keywords: ["video", "video generation", "animate", "text to video", "image to video"]
+---
+
+<Note>Requires Premium.</Note>
+
+Video generation takes an image and animates it, or generates a clip directly from a text prompt. The primary path is image-first: generate a strong first frame in the image generator, then animate it.
+
+## Two paths to video
+
+**Image-to-Video (recommended)**
+Generate an image using Realism, then animate it. This gives you control over the first frame before committing to a video generation. Realism is currently the only model that supports image-to-video. Maximum duration is five seconds.
+
+**Text-to-Video**
+Write a prompt and generate a clip directly, without a first frame. Faster to start, but less control over the exact composition and character details.
+
+## The generation loop
+
+<Steps>
+  <Step title="Generate a first frame">
+    Use the image generator with the Realism model. Compose the shot carefully — camera angle, character position, and lighting in the first frame carry through to the video. See [Workflow](/video-generation/workflow).
+  </Step>
+  <Step title="Open a video session">
+    Start a new Session in the video generator. Sessions keep your generations grouped so you can manage multiple concepts separately. See [Sessions](/video-generation/sessions).
+  </Step>
+  <Step title="Select your path">
+    Choose Image-to-Video to animate your first frame, or Text-to-Video to generate from a prompt directly.
+  </Step>
+  <Step title="Write a motion prompt">
+    Describe the movement and action you want, not just the scene. See [Video Prompting](/video-generation/video-prompting).
+  </Step>
+  <Step title="Set resolution and generate">
+    Pick a resolution that matches your first frame. Click **Generate** and wait for the clip to render.
+  </Step>
+</Steps>
+
+## What affects video output
+
+| Setting | What it does | Where to learn more |
+|---|---|---|
+| First frame | Sets the starting composition and character | [Workflow](/video-generation/workflow) |
+| Motion prompt | Describes movement, action, and camera | [Video Prompting](/video-generation/video-prompting) |
+| Resolution | Controls output dimensions | [Image-to-Video](/video-generation/image-to-video) |
+| Session | Groups related generations | [Sessions](/video-generation/sessions) |
+| Enhanced Video | Upscales and sharpens the output | [Enhanced Video](/video-generation/enhanced-video) |
+
+## Token cost
+
+Video generation uses tokens. Enhanced Video uses additional tokens. See [/premium](/premium) for current rates.
+
+<CardGroup cols={2}>
+  <Card title="Workflow" icon="film" href="/video-generation/workflow">
+    Step-by-step: from first frame to finished video.
+  </Card>
+  <Card title="Sessions" icon="folder" href="/video-generation/sessions">
+    Keep your video generations organized.
+  </Card>
+  <Card title="Text-to-Video" icon="text" href="/video-generation/text-to-video">
+    Generate a clip directly from a prompt.
+  </Card>
+  <Card title="Image-to-Video" icon="image" href="/video-generation/image-to-video">
+    Animate an existing image.
+  </Card>
+</CardGroup>

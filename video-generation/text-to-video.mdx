@@ -1,0 +1,72 @@
+---
+title: "Text-to-Video"
+description: "Generate a video clip directly from a text prompt, without a first frame."
+keywords: ["text to video", "generate video", "prompt to video"]
+---
+
+<Note>
+  Requires Premium.
+</Note>
+
+Text-to-Video generates a clip from a prompt alone. Use it when you want to move fast and don't need precise control over the first frame composition.
+
+## How to use it
+
+1. Open the video generator and start or open a Session
+2. Select **Text-to-Video**
+3. Write a prompt describing the subject, setting, and motion
+4. Select a resolution
+5. Click **Generate**
+
+## Writing a prompt for Text-to-Video
+
+A Text-to-Video prompt needs to cover both the scene and the motion in one description. Structure it as: subject → setting → action → camera.
+
+**Good:** `a woman with long dark hair, standing in a sunlit bedroom, turning slowly toward camera, slow zoom in, soft natural light`
+
+**Bad:** `beautiful woman, high quality, cinematic` — no motion, no setting, no camera direction.
+
+Without a first frame the model makes its own composition decisions. The more specific your prompt, the less the model improvises.
+
+See [Video Prompting](/video-generation/video-prompting) for a full breakdown of motion and camera terms.
+
+## When to use Text-to-Video vs Image-to-Video
+
+|  | Text-to-Video | Image-to-Video |
+| --- | --- | --- |
+| Speed | Faster to start | Requires a first frame |
+| Composition control | Low — model decides | High — you set the frame |
+| Character consistency | Variable | Consistent with first frame |
+| Best for | Quick experiments, abstract scenes | Specific characters, precise shots |
+
+If character accuracy and composition matter, generate a first frame in Realism and use Image-to-Video instead. See [Workflow](/video-generation/workflow).
+
+## Token cost
+
+Text-to-Video uses tokens. See [/premium](/premium) for current rates.
+
+## Common issues
+
+<AccordionGroup>
+  <Accordion title="The character doesn't look consistent across the clip">
+    Text-to-Video has no reference frame, so character appearance can drift. If consistency matters, switch to Image-to-Video with a generated first frame.
+  </Accordion>
+
+  <Accordion title="There's no visible motion in the output">
+    The prompt doesn't describe any movement. Add explicit motion terms — `slow pan, walking forward, hair moving, camera pull back` — to the prompt.
+  </Accordion>
+
+  <Accordion title="The composition is not what I expected">
+    Without a first frame the model interprets composition freely. Add camera and framing terms to your prompt — `close-up, mid-shot, wide angle, overhead` — or switch to Image-to-Video for full control.
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup cols={2}>
+  <Card title="Image-to-Video" icon="image" href="/video-generation/image-to-video">
+    Animate a generated first frame for more control.
+  </Card>
+
+  <Card title="Video Prompting" icon="text" href="/video-generation/video-prompting">
+    Motion and camera terms that work.
+  </Card>
+</CardGroup>

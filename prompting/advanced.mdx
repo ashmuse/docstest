@@ -1,0 +1,89 @@
+---
+title: "Advanced"
+description: "Weights, negatives, token order, and common prompt failure modes."
+keywords: ["weights", "negative prompt", "tokens order", "advanced prompting"]
+---
+
+This page assumes you're comfortable with basic prompt structure. See [Prompting Basics](/prompting/basics) first if you haven't.
+
+## Token weights
+
+Add emphasis to a specific term by wrapping it in parentheses with a multiplier: `(term:1.3)`
+
+- Default weight is 1.0
+- Above 1.0 increases influence — `(big breast:1.4)`
+- Below 1.0 reduces influence — `(clothing:0.6)`
+- Stay between 0.5 and 1.5 — outside that range the model produces artifacts
+
+You can stack weights: `(long red hair:1.3), (pale skin:1.2), (black lingerie:0.8)`
+
+**Good:** `a woman, (detailed face:1.3), soft studio light, photorealistic`
+
+**Bad:** `a woman, (beautiful:2.0), (perfect:2.0), (amazing:2.0)` — stacking high weights on vague sentiment terms produces oversaturated, distorted output.
+
+## Negative prompts
+
+Open the **Advanced** toggle to access the negative prompt field.
+
+Negatives tell the model what to exclude from the output. Use them to fix recurring problems rather than as a general quality filter.
+
+**Useful negatives by problem:**
+
+| Problem | Negative terms |
+|---|---|
+| Deformed hands | `deformed hands, extra fingers, missing fingers, fused fingers` |
+| Bad anatomy | `bad anatomy, malformed body, extra limbs` |
+| Flat lighting | `flat lighting, overexposed, washed out` |
+| Unwanted text | `text, watermark, signature, logo` |
+| Blurry output | `blurry, out of focus, low resolution` |
+| Clothing when unwanted | `clothing, dressed, covered` |
+
+Keep the negative prompt under ten terms. Beyond that the model treats the entire negative as low-priority and ignores it.
+
+## Token order
+
+The model weights tokens that appear earlier in the prompt more heavily. Use this deliberately:
+
+- Put the subject and the most important visual elements first
+- Put style, quality tags, and camera settings last
+- If two elements conflict, whichever appears first usually wins
+
+**Example — subject first:**
+`a woman, red hair, pale skin, black lingerie, sitting on a bed, soft window light, shallow depth of field, photorealistic, high detail`
+
+**Example — quality tags first (wrong):**
+`photorealistic, high detail, 8k, a woman, red hair` — the model treats the quality tags as the primary subject and the actual subject as secondary.
+
+## Combining LoRAs with weighted prompts
+
+When using a LoRA, add trigger words at the start of the prompt before other descriptors, then use weights to balance LoRA influence against the rest:
+
+`<lora:64:0.6>, big breast, pink nipples, (a woman:1.0), dark hair, hotel room, soft light, photorealistic`
+
+If the LoRA overpowers the composition, reduce its weight. If it's not visible, increase it — but stay below 0.9.
+
+## Common failure modes
+
+<AccordionGroup>
+  <Accordion title="Hands and fingers are deformed">
+    Add `deformed hands, extra fingers, missing fingers, fused fingers` to the negative prompt. For close-up hand shots, also add `(hands:0.8)` in the positive prompt to reduce the model's focus on them.
+  </Accordion>
+  <Accordion title="The output ignores part of the prompt">
+    The prompt is too long or has conflicting terms. Cut it down to the ten most important elements and remove any redundant quality tags. Check token order — critical elements should be first.
+  </Accordion>
+  <Accordion title="The output looks oversaturated or distorted">
+    Token weights are too high. Bring everything above 1.3 back down to 1.1–1.2 and regenerate.
+  </Accordion>
+  <Accordion title="Style and content conflict">
+    The model and the style tags disagree. If you're using Realism, drop anime or illustration style tags entirely — they confuse the model rather than blending styles.
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup cols={2}>
+  <Card title="Prompting Basics" icon="text" href="/prompting/basics">
+    Prompt structure and element order.
+  </Card>
+  <Card title="Model-specific tips" icon="lightbulb" href="/prompting/model-specific">
+    Per-model prompting quirks.
+  </Card>
+</CardGroup>

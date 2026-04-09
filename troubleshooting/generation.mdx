@@ -1,0 +1,32 @@
+---
+title: "Generation Issues"
+description: "Fix common problems with image and video generation."
+keywords: ["generations failed", "error", "blurry", "slow", "deformed", "no motion"]
+---
+
+<AccordionGroup>
+  <Accordion title="Generation is taking too long">
+    Generation time depends on server load. Image generation typically completes in a few seconds. Video generation takes longer — Enhanced Video longest of all. If a generation is still running after five minutes, refresh the page.
+  </Accordion>
+  <Accordion title="My generation failed and tokens weren't returned">
+    Tokens are returned automatically for failed generations. Wait a few minutes and check your balance. If tokens haven't been restored after ten minutes, contact [support](mailto:support@pornx.co) with the approximate time of the failed generation.
+  </Accordion>
+  <Accordion title="The output doesn't match my prompt">
+    Three common causes: Prompt Enhancer is rewriting your prompt, the model is misinterpreting token order, or conflicting terms are cancelling each other out. Try toggling Prompt Enhancer off in the settings panel, put your most important terms first, and remove vague quality descriptors like "beautiful" or "perfect".
+  </Accordion>
+  <Accordion title="The output looks blurry or low quality">
+    Check the resolution setting — a low resolution produces soft output regardless of prompt quality. If resolution is correct, add quality terms to the prompt: `sharp focus, high detail, 8k`. For video, run the clip through Enhanced Video. See [Enhanced Video](/video-generation/enhanced-video).
+  </Accordion>
+  <Accordion title="Hands and anatomy look deformed">
+    This is a known limitation of diffusion models. Add `deformed hands, extra fingers, missing fingers, bad anatomy` to your negative prompt. For anatomy-specific improvements, use the Better Breast or BetterCock LoRA. See [LoRAs](/image-generation/loras).
+  </Accordion>
+  <Accordion title="The video has no visible motion">
+    The motion prompt doesn't contain explicit movement terms. Add camera and body motion terms: `slow pan right, walking forward, hair blowing, slow zoom in`. See [Video Prompting](/video-generation/video-prompting).
+  </Accordion>
+  <Accordion title="Image-to-Video won't accept my image">
+    Image-to-Video only supports images generated with the Realism model. If your image was generated with another model, regenerate the first frame using Realism. Also check that the resolution matches between the source image and the video settings. See [Image-to-Video](/video-generation/image-to-video).
+  </Accordion>
+  <Accordion title="My generation was blocked">
+    Some content falls outside what the platform will generate. See [Content Restrictions](/troubleshooting/content) for details.
+  </Accordion>
+</AccordionGroup>

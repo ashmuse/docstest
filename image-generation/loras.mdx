@@ -1,0 +1,50 @@
+---
+title: "LoRAs"
+description: "Fine-tune anatomy and style on top of any model using LoRAs."
+keywords: ["lora", "better breast", "anatomy", "bettercock", "fine-tune", "trigger words"]
+---
+
+<Note>
+  Requires Premium.
+</Note>
+
+A LoRA (Low-Rank Adaptation) is a small model that runs on top of your chosen model and pushes the output toward a specific look. PornX currently has two LoRAs focused on anatomy accuracy.
+
+## How to apply a LoRA
+
+Add the trigger directly in your prompt: `<lora:NAME:WEIGHT>`
+
+- **NAME** — the LoRA identifier (see each LoRA below)
+- **WEIGHT** — how strongly the LoRA influences the output. Range: 0.1–1.0. Best results typically fall between 0.3 and 0.8.
+
+Example: `<lora:64:0.6>, big breast, pink nipples` — applies Better Breast at 0.6 weight with supporting trigger words.
+
+You can combine both LoRAs in one prompt. Keep total weight balanced — stacking two at 0.8 each tends to produce artifacts.
+
+## Better Breast
+
+Improves breast shape, size, and detail accuracy. Use trigger words from the table below alongside the LoRA tag for best results.
+
+**Trigger:** `<lora:64:0.6>`
+
+| Category | Options |
+| --- | --- |
+| Breast Size | flat breast, small breast, medium breast, big breast, fake breast, bimbo breast |
+| Breast Form | torpedo\_breast, saggy breast |
+| Nipple Color | pink nipples, brown nipples |
+| Nipple Style | normal\_nipples, big\_nipples, inverted\_nipples, puffy\_nipples |
+| Areola Size | small areola, normal areola, big areola |
+
+## BetterCock
+
+{/* TODO: confirm with PM — trigger syntax, weight range, and keyword table for BetterCock LoRA */}
+
+<CardGroup cols={2}>
+  <Card title="Models" icon="cpu" href="/image-generation/models">
+    Choose the base model before applying a LoRA.
+  </Card>
+
+  <Card title="Prompting Advanced" icon="text" href="/prompting/advanced">
+    Weights, negatives, and token order.
+  </Card>
+</CardGroup>

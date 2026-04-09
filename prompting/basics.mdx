@@ -1,0 +1,62 @@
+---
+title: "Basics"
+description: "How to structure a prompt that gets consistent results."
+keywords: ["prompt", "prompting", "how to write a prompt", "subject", "lightning", "camera"]
+---
+
+A prompt is a description of what you want the image to contain. Structure matters more than length — a well-ordered short prompt outperforms a long unstructured one.
+
+## Prompt structure
+
+Write elements in this order, from most to least important:
+
+| Position | Element | Example |
+|---|---|---|
+| 1 | Subject | `a woman in her 20s, red hair` |
+| 2 | Action or pose | `lying on a bed, looking at camera` |
+| 3 | Setting | `hotel room, evening` |
+| 4 | Lighting | `warm side light, soft shadows` |
+| 5 | Camera | `close-up, shallow depth of field` |
+| 6 | Style | `photorealistic, high detail` |
+| 7 | Quality tags | `8k, sharp focus, detailed skin` |
+
+You don't need every element. Start with subject and action — add the rest to correct specific problems with the output.
+
+## Good vs bad prompts
+
+**Bad:** `sexy woman, hot, beautiful, amazing photo, best quality`
+
+This is all sentiment and no description. The model has nothing specific to work with.
+
+**Good:** `a woman in her late 20s, dark skin, black lingerie, sitting on a white bed, window light from the left, shallow depth of field, photorealistic`
+
+This gives the model subject, clothing, setting, lighting, and camera in one sentence.
+
+## What Prompt Enhancer does
+
+PornX automatically enhances short prompts. You can toggle it off in the settings panel if you want the output to follow your exact wording.
+
+## Negative prompts
+
+A negative prompt tells the model what to exclude. Access it via the **Advanced** toggle.
+
+Common negatives: `blurry, deformed hands, extra fingers, bad anatomy, watermark, text`
+
+Don't overload the negative prompt — five to eight terms is enough. More than that and the model starts ignoring all of them.
+
+## Tips
+
+- Put the subject first — the model weights earlier tokens more heavily
+- Be specific about body type, hair, clothing, and setting rather than using vague descriptors like "beautiful" or "perfect"
+- Add lighting terms to fix flat or overexposed results — `soft natural light`, `dramatic side light`, `backlit`
+- Use style and quality tags at the end, not the beginning
+- If you're getting consistent artifacts, add the specific problem to your negative prompt
+
+<CardGroup cols={2}>
+  <Card title="Advanced Prompting" icon="sliders" href="/prompting/advanced">
+    Weights, negatives, and token order.
+  </Card>
+  <Card title="Model-specific tips" icon="lightbulb" href="/prompting/model-specific">
+    Prompting quirks per model.
+  </Card>
+</CardGroup>
