@@ -19,6 +19,8 @@
     "decoration": "gradient"
   },
   "fonts": {
+    "family": "Poppins",
+    "weight": 400,
     "heading": {
       "family": "Poppins",
       "weight": 600
@@ -181,5 +183,8 @@
     "fonts": {
       "family": "Poppins"
     }
+  },
+  "appearance": {
+    "default": "dark"
   }
 }
