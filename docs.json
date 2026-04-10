@@ -11,10 +11,10 @@
     "light": "/logo/favicon-px.ico",
     "dark": "/logo/favicon-px.ico"
   },
-  "logo": "/logo/pxlogo_old.jpg",
-  "appearance": {
-    "default": "dark"
-  },
+  "logo": {
+  "light": "/logo/pxlogo_old.jpg",
+  "dark": "/logo/pxlogo_old.jpg"
+},
   "background": {
     "decoration": "gradient"
   },
