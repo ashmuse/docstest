@@ -113,18 +113,18 @@
               "video-generation/create-your-video"
             ]
           },
+            {
+            "group": "Gallery",
+            "pages": [
+              "gallery"
+            ]
+          },
           {
             "group": "Characters",
             "pages": [
               "characters/overview",
               "characters/generate",
               "characters/make-alive"
-            ]
-          },
-            {
-            "group": "Gallery",
-            "pages": [
-              "gallery"
             ]
           },
           {
