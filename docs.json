@@ -12,8 +12,8 @@
     "dark": "/logo/favicon-px.ico"
   },
   "logo": {
-  "light": "/logo/pxlogo.png",
-  "dark": "/logo/pxlogo.png"
+  "light": "/logo/logo.svg",
+  "dark": "/logo/logo.svg"
 },
   "background": {
     "decoration": "gradient"
