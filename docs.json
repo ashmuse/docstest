@@ -105,12 +105,12 @@
             "group": "Video Generation",
             "pages": [
               "video-generation/overview",
-              "video-generation/workflow",
               "video-generation/text-to-video",
               "video-generation/image-to-video",
               "video-generation/enhanced-video",
               "video-generation/sessions",
-              "video-generation/video-prompting"
+              "video-generation/video-prompting",
+              "video-generation/create-your-video"
             ]
           },
           {
