@@ -114,6 +114,20 @@
             ]
           },
           {
+            "group": "Characters",
+            "pages": [
+              "characters/overview",
+              "characters/generate",
+              "characters/make-alive"
+            ]
+          },
+            {
+            "group": "Gallery",
+            "pages": [
+              "gallery"
+            ]
+          },
+          {
             "group": "Cookbook",
             "pages": [
               "cookbook/realistic-portrait",
@@ -131,12 +145,6 @@
               "cookbook/inpaint-detail",
               "cookbook/lora-stacking",
               "cookbook/style-action-combo"
-            ]
-          },
-          {
-            "group": "Gallery",
-            "pages": [
-              "gallery"
             ]
           },
           {
