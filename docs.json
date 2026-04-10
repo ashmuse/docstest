@@ -170,14 +170,6 @@
       }
     ]
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude"
-    ]
-  },
   "footer": {
     "socials": {
       "discord": "https://discord.gg/Gz29x92rZT",
