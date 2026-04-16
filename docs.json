@@ -12,7 +12,11 @@
     "dark": "/logo/favicon-px.ico"
   },
   "background": {
-    "decoration": "gradient"
+    "decoration": "gradient",
+    "color": {
+      "light": "#fb4a04",
+      "dark": "#fb4a04"
+    }
   },
   "fonts": {
     "family": "Poppins",
