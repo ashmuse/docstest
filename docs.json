@@ -14,8 +14,8 @@
   "background": {
     "decoration": "gradient",
     "color": {
-      "light": "#fb4a04",
-      "dark": "#fb4a04"
+      "light": "#FFFFFF",
+      "dark": "#000000"
     }
   },
   "fonts": {
