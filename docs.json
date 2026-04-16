@@ -11,10 +11,6 @@
     "light": "/logo/favicon-px.ico",
     "dark": "/logo/favicon-px.ico"
   },
-  "logo": {
-  "light": "/logo/logo.svg",
-  "dark": "/logo/logo.svg"
-},
   "background": {
     "decoration": "gradient"
   },
@@ -161,5 +157,6 @@
   "appearance": {
     "default": "dark",
     "strict": true
-  }
+  },
+  "logo": "/logo/x-logo-orange.svg"
 }
