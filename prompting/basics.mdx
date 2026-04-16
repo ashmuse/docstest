@@ -11,14 +11,14 @@ A prompt is a description of what you want the image to contain. Structure matte
 Write elements in this order, from most to least important:
 
 | Position | Element | Example |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Subject | `a woman in her 20s, red hair` |
 | 2 | Action or pose | `lying on a bed, looking at camera` |
 | 3 | Setting | `hotel room, evening` |
 | 4 | Lighting | `warm side light, soft shadows` |
 | 5 | Camera | `close-up, shallow depth of field` |
-| 6 | Style | `photorealistic, high detail` |
-| 7 | Quality tags | `8k, sharp focus, detailed skin` |
+| 6 | Style | `high detail` |
+| 7 | Quality tags | `sharp focus, detailed skin` |
 
 You don't need every element. Start with subject and action — add the rest to correct specific problems with the output.
 
@@ -28,13 +28,16 @@ You don't need every element. Start with subject and action — add the rest to 
 
 This is all sentiment and no description. The model has nothing specific to work with.
 
-**Good:** `a woman in her late 20s, dark skin, black lingerie, sitting on a white bed, window light from the left, shallow depth of field, photorealistic`
+**Good:** 
+
+<Prompt description="`a woman in her late 20s, dark skin, black lingerie, sitting on a white bed, window light from the left, shallow depth of field`" icon="input-text" actions={["copy"]}>
+</Prompt>
 
 This gives the model subject, clothing, setting, lighting, and camera in one sentence.
 
 ## What Prompt Enhancer does
 
-PornX automatically enhances short prompts. You can toggle it off in the settings panel if you want the output to follow your exact wording.
+PornX automatically enhances prompts. You can toggle it off in the settings panel if you want the output to follow your exact wording.
 
 ## Negative prompts
 
@@ -56,6 +59,7 @@ Don't overload the negative prompt — five to eight terms is enough. More than 
   <Card title="Advanced Prompting" icon="sliders" href="/prompting/advanced">
     Weights, negatives, and token order.
   </Card>
+
   <Card title="Model-specific tips" icon="lightbulb" href="/prompting/model-specific">
     Prompting quirks per model.
   </Card>
