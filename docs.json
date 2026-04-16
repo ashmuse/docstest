@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "PornX Docs",
   "colors": {
-    "primary": "#FFA702",
-    "light": "#FFA702",
-    "dark": "#FFA702"
+    "primary": "#fb4a04",
+    "light": "#fb4a04",
+    "dark": "#fb4a04"
   },
   "favicon": {
     "light": "/logo/favicon-px.ico",
