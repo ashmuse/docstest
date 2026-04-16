@@ -59,6 +59,7 @@
             "group": "Introduction",
             "expanded": true,
             "pages": [
+              "introduction/welcome",
               "introduction/what-is-pornx",
               "introduction/quickstart",
               "introduction/navigation"
