@@ -155,7 +155,7 @@
   },
   "appearance": {
     "default": "dark",
-    "strict": false
+    "strict": true
   },
   "logo": {
     "light": "/logo/x-logo-orange.svg",
