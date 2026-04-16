@@ -55,11 +55,6 @@
           "href": "https://pornx.co/"
         },
         {
-          "anchor": "Discord",
-          "icon": "discord",
-          "href": "https://discord.gg/Gz29x92rZT"
-        },
-        {
           "anchor": "Telegram",
           "icon": "telegram",
           "href": "https://t.me/pxainews"
@@ -112,7 +107,7 @@
               "video-generation/create-your-video"
             ]
           },
-            {
+          {
             "group": "Gallery",
             "pages": [
               "gallery"
@@ -175,7 +170,6 @@
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.gg/Gz29x92rZT",
       "telegram": "https://t.me/pxainews"
     }
   },
