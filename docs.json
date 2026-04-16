@@ -160,7 +160,10 @@
   },
   "appearance": {
     "default": "dark",
-    "strict": true
+    "strict": false
   },
-  "logo": "/logo/x-logo-orange.svg"
+  "logo": {
+    "light": "/logo/x-logo-orange.svg",
+    "dark": "/logo/x-logo-orange.svg"
+  }
 }
