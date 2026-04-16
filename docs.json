@@ -47,6 +47,11 @@
       "anchors": [
         {
           "anchor": "PornX",
+          "icon": "globe-pointer",
+          "color": {
+            "light": "#fb4a04",
+            "dark": "#fb4a04"
+          },
           "href": "https://pornx.co/"
         }
       ]
