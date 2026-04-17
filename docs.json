@@ -35,7 +35,12 @@
     "indexing": "all"
   },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "PornX",
+        "href": "https://pornx.co/"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Go to PornX",
