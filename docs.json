@@ -82,7 +82,7 @@
               "image-generation/models",
               "image-generation/parameters",
               "image-generation/styles",
-              "image-generations/edit-page",
+              "image-generation/edit-page",
               "image-generation/presets",
               "image-generation/loras",
               "image-generation/private-generation"
