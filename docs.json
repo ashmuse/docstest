@@ -81,10 +81,10 @@
               "image-generation/overview",
               "image-generation/models",
               "image-generation/parameters",
-              "image-generation/loras",
               "image-generation/styles",
+              "image-generations/edit-page",
               "image-generation/presets",
-              "image-generation/inpaint",
+              "image-generation/loras",
               "image-generation/private-generation"
             ]
           },
@@ -148,11 +148,6 @@
         ]
       }
     ]
-  },
-  "footer": {
-    "socials": {
-      "telegram": "https://t.me/pxainews"
-    }
   },
   "thumbnails": {
     "fonts": {
