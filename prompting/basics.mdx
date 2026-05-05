@@ -4,7 +4,7 @@ description: "Learn how to structure an effective image prompt on PornX, includi
 keywords: ["prompt", "prompting", "how to write a prompt", "subject", "lightning", "camera"]
 ---
 
-A prompt is a description of what you want the image to contain. Structure matters more than length — a well-ordered short prompt outperforms a long unstructured one.
+A prompt is a description of what you want the image to contain. Structure matters more than length: a well-ordered short prompt outperforms a long unstructured one.
 
 ## Prompt structure
 
@@ -20,7 +20,7 @@ Write elements in this order, from most to least important:
 | 6 | Style | `high detail` |
 | 7 | Quality tags | `sharp focus, detailed skin` |
 
-You don't need every element. Start with subject and action — add the rest to correct specific problems with the output.
+You don't need every element. Start with subject and action: add the rest to correct specific problems with the output.
 
 ## Good vs bad prompts
 
@@ -28,7 +28,7 @@ You don't need every element. Start with subject and action — add the rest to 
 
 This is all sentiment and no description. The model has nothing specific to work with.
 
-**Good:** 
+**Good:**
 
 <Prompt description="`a woman in her late 20s, dark skin, black lingerie, sitting on a white bed, window light from the left, shallow depth of field`" icon="input-text" actions={["copy"]}>
 </Prompt>
@@ -43,15 +43,17 @@ PornX automatically enhances prompts. You can toggle it off in the settings pane
 
 A negative prompt tells the model what to exclude. Access it via the **Advanced** toggle.
 
-Common negatives: `blurry, deformed hands, extra fingers, bad anatomy, watermark, text`
+Common negatives:
+<Prompt description="`blurry, deformed hands, extra fingers, bad anatomy, watermark, text`" icon="input-text" actions={["copy"]}>
+</Prompt>
 
-Don't overload the negative prompt — five to eight terms is enough. More than that and the model starts ignoring all of them.
+Don't overload the negative prompt: five to eight terms is enough. More than that and the model starts ignoring all of them.
 
 ## Tips
 
-- Put the subject first — the model weights earlier tokens more heavily
+- Put the subject first, so the model weights earlier tokens more heavily
 - Be specific about body type, hair, clothing, and setting rather than using vague descriptors like "beautiful" or "perfect"
-- Add lighting terms to fix flat or overexposed results — `soft natural light`, `dramatic side light`, `backlit`
+- Add lighting terms to fix flat or overexposed results: `soft natural light`, `dramatic side light`, `backlit`
 - Use style and quality tags at the end, not the beginning
 - If you're getting consistent artifacts, add the specific problem to your negative prompt
 
