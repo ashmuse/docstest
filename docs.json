@@ -145,8 +145,8 @@
           {
             "group": "More",
             "pages": [
-              "community-guidelines",
-              "support"
+              "more/community-guidelines",
+              "more/support"
             ]
           }
         ]
