@@ -1,37 +1,20 @@
 ---
 title: "Image-to-video: animate a generated image"
 description: "Animate a generated image into a five-second video clip on PornX using image-to-video with motion prompts and resolution matching."
-keywords: ["image to video", "animate", "first frame", "realism"]
+keywords: ["image to video", "animate", "first frame"]
 ---
-
-<Note>Requires Premium.</Note>
 
 Image-to-Video takes an existing image and animates it. Maximum duration is five seconds.
 
 ## How to use it
 
-1. Generate an image using the **Realism** model in the image generator
+1. Generate an image in the image generator
 2. Save the image to your gallery
 3. Open the video generator and start or open a Session
 4. Select **Image-to-Video**
 5. Select your image from the gallery
 6. Write a motion prompt describing what should move and how
-7. Select a resolution matching your source image
-8. Click **Generate**
-
-## Resolution
-
-The video resolution must match the source image resolution. Select the same aspect ratio in the video generator that you used when generating the image.
-
-| Source image ratio | Use in video |
-|---|---|
-| 1:1 | 1:1 |
-| 7:9 | 7:9 |
-| 9:7 | 9:7 |
-| 5:12 | 5:12 |
-| 12:5 | 12:5 |
-
-{/* TODO: confirm with PM — full list of supported resolutions for image-to-video, and whether all image ratios are supported or only a subset */}
+7. Click **Generate**
 
 ## What makes a good first frame
 
@@ -52,15 +35,12 @@ Image-to-Video uses tokens. See [/premium](/premium) for current rates.
   <Accordion title="The animation looks unnatural or distorted">
     The first frame may have a complex background or extreme pose. Regenerate the first frame with a simpler background and a more neutral pose, then try again.
   </Accordion>
-  <Accordion title="My image from a non-Realism model isn't working">
-    Only images generated with Realism support image-to-video. Regenerate the first frame using Realism.
-  </Accordion>
   <Accordion title="The motion is too subtle">
     Add more explicit motion terms to the prompt — `walking forward, turning head, hair blowing, camera slowly zooming in`. See [Video Prompting](/video-generation/video-prompting).
   </Accordion>
 </AccordionGroup>
 
-<CardGroup cols={2}>
+<CardGroup cols="2">
   <Card title="Workflow" icon="film" href="/video-generation/workflow">
     Full step-by-step from first frame to finished video.
   </Card>
