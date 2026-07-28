@@ -126,7 +126,7 @@
             ]
           },
           {
-            "group": "Account & Billing",
+            "group": "Account",
             "pages": [
               "account/tokens",
               "account/premium",
