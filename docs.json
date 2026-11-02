@@ -118,6 +118,10 @@
             ]
           },
           {
+            "group": "Chat",
+            "pages": []
+          },
+          {
             "group": "Characters",
             "pages": [
               "characters/overview",
@@ -132,6 +136,10 @@
               "account/premium",
               "account/crypto-payments"
             ]
+          },
+          {
+            "group": "Earn",
+            "pages": []
           },
           {
             "group": "Troubleshooting",
