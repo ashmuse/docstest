@@ -119,7 +119,13 @@
           },
           {
             "group": "Chat",
-            "pages": []
+            "pages": [
+              "chat/overview",
+              "chat/talking-to-characters",
+              "chat/create-a-chatbot",
+              "chat/my-characters-and-chats",
+              "chat/creator-studio"
+            ]
           },
           {
             "group": "Characters",
