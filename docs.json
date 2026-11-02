@@ -88,7 +88,9 @@
               "image-generation/edit-page",
               "image-generation/presets",
               "image-generation/loras",
-              "image-generation/private-generation"
+              "image-generation/private-generation",
+              "image-generation/prompt-assistant",
+              "image-generation/create-modes"
             ]
           },
           {
@@ -108,13 +110,16 @@
               "video-generation/enhanced-video",
               "video-generation/sessions",
               "video-generation/video-prompting",
-              "video-generation/create-your-video"
+              "video-generation/create-your-video",
+              "video-generation/actions-and-smooth-mode"
             ]
           },
           {
             "group": "Gallery",
             "pages": [
-              "gallery"
+              "gallery",
+              "gallery/image-page",
+              "gallery/profiles-and-collections"
             ]
           },
           {
