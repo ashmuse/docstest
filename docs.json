@@ -140,12 +140,21 @@
             "pages": [
               "account/tokens",
               "account/premium",
-              "account/crypto-payments"
+              "account/crypto-payments",
+              "account/payments",
+              "account/cancel-and-refunds",
+              "account/daily-rewards",
+              "account/promo-codes",
+              "account/referrals",
+              "account/profile-and-settings"
             ]
           },
           {
             "group": "Earn",
-            "pages": []
+            "pages": [
+              "earn/creator-program",
+              "earn/affiliates"
+            ]
           },
           {
             "group": "Troubleshooting",
@@ -159,7 +168,8 @@
             "group": "More",
             "pages": [
               "help-section/community-guidelines",
-              "more/support"
+              "more/support",
+              "more/legal-and-policies"
             ]
           }
         ]
