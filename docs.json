@@ -198,7 +198,72 @@
     "socials": {
       "discord": "https://discord.com/invite/pornx-co",
       "x": "https://x.com/pornx_ai"
-    }
+    },
+    "links": [
+      {
+        "header": "PornX",
+        "items": [
+          {
+            "label": "Image generator",
+            "href": "https://pornx.co/create"
+          },
+          {
+            "label": "Video generator",
+            "href": "https://pornx.co/video"
+          },
+          {
+            "label": "Chat",
+            "href": "https://pornx.co/chat"
+          },
+          {
+            "label": "Edit",
+            "href": "https://pornx.co/edit"
+          },
+          {
+            "label": "Premium",
+            "href": "https://pornx.co/premium"
+          }
+        ]
+      },
+      {
+        "header": "AI generators",
+        "items": [
+          {
+            "label": "AI porn generator",
+            "href": "https://pornx.co/ai-porn-generator"
+          },
+          {
+            "label": "NSFW AI image generator",
+            "href": "https://pornx.co/nsfw-ai-image-generator"
+          },
+          {
+            "label": "AI porn video generator",
+            "href": "https://pornx.co/ai-porn-video-generator"
+          },
+          {
+            "label": "Free AI porn generator",
+            "href": "https://pornx.co/free-ai-porn-generator"
+          }
+        ]
+      },
+      {
+        "header": "AI chat",
+        "items": [
+          {
+            "label": "AI girlfriend chat",
+            "href": "https://pornx.co/ai-girlfriend-chat"
+          },
+          {
+            "label": "AI roleplay chat",
+            "href": "https://pornx.co/ai-roleplay-chat"
+          },
+          {
+            "label": "NSFW AI chat",
+            "href": "https://pornx.co/nsfw-ai-chat"
+          }
+        ]
+      }
+    ]
   },
   "banner": {
     "content": "CONNECT DISCORD FROM PORNX.CO AND GET 20 TOKENS",
