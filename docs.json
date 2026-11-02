@@ -88,7 +88,9 @@
               "image-generation/edit-page",
               "image-generation/presets",
               "image-generation/loras",
-              "image-generation/private-generation"
+              "image-generation/private-generation",
+              "image-generation/prompt-assistant",
+              "image-generation/create-modes"
             ]
           },
           {
@@ -108,13 +110,26 @@
               "video-generation/enhanced-video",
               "video-generation/sessions",
               "video-generation/video-prompting",
-              "video-generation/create-your-video"
+              "video-generation/create-your-video",
+              "video-generation/actions-and-smooth-mode"
             ]
           },
           {
             "group": "Gallery",
             "pages": [
-              "gallery"
+              "gallery",
+              "gallery/image-page",
+              "gallery/profiles-and-collections"
+            ]
+          },
+          {
+            "group": "Chat",
+            "pages": [
+              "chat/overview",
+              "chat/talking-to-characters",
+              "chat/create-a-chatbot",
+              "chat/my-characters-and-chats",
+              "chat/creator-studio"
             ]
           },
           {
@@ -130,7 +145,20 @@
             "pages": [
               "account/tokens",
               "account/premium",
-              "account/crypto-payments"
+              "account/crypto-payments",
+              "account/payments",
+              "account/cancel-and-refunds",
+              "account/daily-rewards",
+              "account/promo-codes",
+              "account/referrals",
+              "account/profile-and-settings"
+            ]
+          },
+          {
+            "group": "Earn",
+            "pages": [
+              "earn/creator-program",
+              "earn/affiliates"
             ]
           },
           {
@@ -145,7 +173,8 @@
             "group": "More",
             "pages": [
               "help-section/community-guidelines",
-              "more/support"
+              "more/support",
+              "more/legal-and-policies"
             ]
           }
         ]
@@ -169,10 +198,82 @@
     "socials": {
       "discord": "https://discord.com/invite/pornx-co",
       "x": "https://x.com/pornx_ai"
-    }
+    },
+    "links": [
+      {
+        "header": "PornX",
+        "items": [
+          {
+            "label": "Image generator",
+            "href": "https://pornx.co/create"
+          },
+          {
+            "label": "Video generator",
+            "href": "https://pornx.co/video"
+          },
+          {
+            "label": "Chat",
+            "href": "https://pornx.co/chat"
+          },
+          {
+            "label": "Edit",
+            "href": "https://pornx.co/edit"
+          },
+          {
+            "label": "Premium",
+            "href": "https://pornx.co/premium"
+          }
+        ]
+      },
+      {
+        "header": "AI generators",
+        "items": [
+          {
+            "label": "AI porn generator",
+            "href": "https://pornx.co/ai-porn-generator"
+          },
+          {
+            "label": "NSFW AI image generator",
+            "href": "https://pornx.co/nsfw-ai-image-generator"
+          },
+          {
+            "label": "AI porn video generator",
+            "href": "https://pornx.co/ai-porn-video-generator"
+          },
+          {
+            "label": "Free AI porn generator",
+            "href": "https://pornx.co/free-ai-porn-generator"
+          }
+        ]
+      },
+      {
+        "header": "AI chat",
+        "items": [
+          {
+            "label": "AI girlfriend chat",
+            "href": "https://pornx.co/ai-girlfriend-chat"
+          },
+          {
+            "label": "AI roleplay chat",
+            "href": "https://pornx.co/ai-roleplay-chat"
+          },
+          {
+            "label": "NSFW AI chat",
+            "href": "https://pornx.co/nsfw-ai-chat"
+          }
+        ]
+      }
+    ]
   },
   "banner": {
     "content": "CONNECT DISCORD FROM PORNX.CO AND GET 20 TOKENS",
     "dismissible": true
-  }
+  },
+  "redirects": [
+    {
+      "source": "/more/community-guidelines",
+      "destination": "/help-section/community-guidelines",
+      "permanent": true
+    }
+  ]
 }
