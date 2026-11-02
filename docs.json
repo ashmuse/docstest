@@ -174,5 +174,12 @@
   "banner": {
     "content": "CONNECT DISCORD FROM PORNX.CO AND GET 20 TOKENS",
     "dismissible": true
-  }
+  },
+  "redirects": [
+    {
+      "source": "/more/community-guidelines",
+      "destination": "/help-section/community-guidelines",
+      "permanent": true
+    }
+  ]
 }
